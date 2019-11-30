@@ -1,0 +1,23 @@
+//object Snippets : IntIdTable() {
+//    val name: Column<String> = varchar("name", 255)
+//    val content: Column<String> = varchar("content", 4096)
+//    val extention: Column<String?> = varchar("director", 50).nullable()
+//}
+//
+//class Snippet(id: EntityID<Int>) : IntEntity(id) {
+//    companion object : IntEntityClass<Snippet>(Snippets)
+//
+//    var name        by Snippets.name
+//    var content    by Snippets.content
+//    var extention   by Snippets.extention
+//}
+//
+//data class MySnippet(
+//    var id: EntityID<Int>,
+//    var name: String,
+//    var content: String,
+//    var extention: String?
+//)
+//    transaction {
+//        SchemaUtils.createMissingTablesAndColumns(Snippets)
+//    }
